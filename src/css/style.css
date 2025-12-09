@@ -1,0 +1,14 @@
+/* === Main Style File === */
+@import "./variables.css";
+@import "./layout.css";
+@import "./component.css";
+
+/* Genel Reset ve Fontlar */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

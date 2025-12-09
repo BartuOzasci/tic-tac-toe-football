@@ -1,0 +1,36 @@
+/* === Section: Layout & Grid === */
+
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle at center,
+    #2b2b2b 0%,
+    #000000 100%
+  ); /* Şık background */
+}
+
+/* 4x4 Grid Alanı */
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px); /* 4 Sütun */
+  grid-template-rows: repeat(4, 100px); /* 4 Satır */
+  gap: 10px; /* Kutular arası boşluk */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05); /* Cam efekti */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 576px) {
+  .custom-grid {
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: repeat(4, 70px);
+  }
+}
