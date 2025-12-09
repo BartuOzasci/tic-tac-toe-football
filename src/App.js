@@ -85,9 +85,9 @@ const App = () => {
     <main className="main-container">
       <header className="mb-4 text-center">
         <h1 className="text-white fw-light">
-          Logo{" "}
+          Bartu{" "}
           <span style={{ color: "var(--accent-color)", fontWeight: "bold" }}>
-            GRID
+            Tic-Tac-Toe
           </span>
         </h1>
       </header>
@@ -112,3 +112,4 @@ const App = () => {
 };
 
 export default App;
+
